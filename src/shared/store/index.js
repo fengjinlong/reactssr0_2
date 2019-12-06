@@ -1,5 +1,5 @@
 import {createStore} from 'redux'
-const state = {data: ''}
+const state = {data: '333'}
 
 function reducer (initState=state, action) {
   switch (action.type) {
