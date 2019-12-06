@@ -1,5 +1,5 @@
 import {createStore} from 'redux'
-const state = {data: '333'}
+const state = {data: '空'}
 
 function reducer (initState=state, action) {
   switch (action.type) {
@@ -11,6 +11,7 @@ function reducer (initState=state, action) {
 }
 
 export function createClientStore () {
+  // return createStore(reducer, window.REDUX_DATA)
   return createStore(reducer)
 }
 export function createServerStore () {

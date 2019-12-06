@@ -14,7 +14,7 @@ import routes from "../shared/Routes";
 
 const app = express()
 app.use(express.static('public'))
-
+console.log(1111111)
 const routersArr = ['/', '/about', '/other']
 app.get(routersArr, function (req, res) {
 
@@ -25,6 +25,7 @@ app.get(routersArr, function (req, res) {
   const promises = []
   matchedRouters.forEach(item => {
     console.log(66666)
+    console.log(item.route)
     if (item.route.loadData) {
       console.log(77777)
       promises.push(
@@ -67,5 +68,5 @@ app.get('/api', (req, res) => {
   })
 })
 app.listen(3000, () => {
-  console.log('fuwu')
+  console.log('启动')
 })

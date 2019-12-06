@@ -7,7 +7,7 @@
     "dev": "webpack-dev-server --config ./build/webpack.client.config.js",
     "build:client": "webpack --config ./build/webpack.client.config.js",
     "build:server": "webpack --config ./build/webpack.server.config.js",
-    "build1": "npm-run-all --parallel build:*"
+    "build": "npm-run-all --parallel build:*"
   },
   "keywords": [],
   "author": "",

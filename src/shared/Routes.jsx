@@ -16,7 +16,8 @@ const routes = [
   },
   {
     path: '/about',
-    component: About
+    component: About,
+    loadData: About.loadData
   },
   {
     path: '/other',
